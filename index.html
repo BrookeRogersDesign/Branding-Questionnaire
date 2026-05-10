@@ -1061,6 +1061,28 @@
     document.body.style.overflow = isOpen ? '' : 'hidden';
   }
 
+  function toggleSvcDetail(id) {
+    const detail = document.getElementById(id);
+    const row = detail ? detail.closest('.svc-row') : null;
+    const arrow = row ? row.querySelector('.svc-arrow') : null;
+    if (!detail || !row) return;
+    const isOpen = row.classList.contains('open');
+    // Close all open rows first
+    document.querySelectorAll('.svc-row.open').forEach(r => {
+      r.classList.remove('open');
+      const d = r.querySelector('.svc-detail');
+      const a = r.querySelector('.svc-arrow');
+      if (d) d.style.display = 'none';
+      if (a) { a.textContent = '+'; a.style.transform = ''; a.style.color = ''; }
+    });
+    // Open clicked row if it was closed
+    if (!isOpen) {
+      row.classList.add('open');
+      detail.style.display = 'block';
+      if (arrow) { arrow.textContent = '×'; arrow.style.transform = 'rotate(0deg)'; arrow.style.color = 'var(--lime)'; }
+    }
+  }
+
   function switchTab(idx) {
     document.querySelectorAll(".tab-panel").forEach((p, i) => p.classList.toggle("active", i === idx));
     document.querySelectorAll(".nav-item").forEach((b, i) => b.classList.toggle("active", i === idx));
