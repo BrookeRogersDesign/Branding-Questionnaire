@@ -204,6 +204,11 @@
     .svc-detail { display: none; padding: 0 4px 28px; }
     .svc-row.open .svc-detail { display: block; }
     .svc-detail p { font-size: 14.5px; color: var(--off-white); line-height: 1.75; max-width: 680px; margin-bottom: 20px; }
+    .svc-vision { font-size: 16px !important; font-style: italic; font-weight: 400; color: var(--lime) !important; border-left: 2px solid var(--lime); padding-left: 16px; margin-bottom: 18px !important; }
+    .svc-includes { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; margin-bottom: 20px; max-width: 680px; }
+    .svc-include-item { font-size: 13.5px; color: var(--off-white); display: flex; align-items: flex-start; gap: 8px; line-height: 1.5; }
+    .svc-check { color: var(--lime); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+    @media (max-width: 600px) { .svc-includes { grid-template-columns: 1fr; } }
     .svc-tags { display: flex; flex-wrap: wrap; gap: 8px; }
     .svc-tags span { font-size: 12px; font-weight: 600; color: var(--lime); background: var(--lime-dim); border: 1px solid rgba(176,242,51,0.2); padding: 5px 13px; border-radius: 20px; }
     /* ── Mobile Topbar ── */
@@ -840,7 +845,17 @@
               <span class="svc-arrow" id="arrow-svc-branding">+</span>
             </div>
             <div class="svc-detail" id="svc-branding">
+              <p class="svc-vision">"Your brand is the first thing people feel before they read a single word."</p>
               <p>We build brand identities that are impossible to ignore. From the mark to the full system — logo, color palette, typography, brand guidelines, and every touchpoint in between. Whether you're starting from zero or ready for a full rebrand, we create visual worlds that tell your story at a glance.</p>
+              <p>Every element is intentional. Every choice is strategic. We don't just make things look good — we make sure your brand communicates who you are, who you're for, and why you're different before a single word is read.</p>
+              <div class="svc-includes">
+                <div class="svc-include-item"><span class="svc-check">→</span>Logo design & full mark suite</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Color palette & typography system</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Brand guidelines & usage rules</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Business cards, letterhead & collateral</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Social media templates & profile kit</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Brand strategy & positioning</div>
+              </div>
               <div class="svc-tags"><span>Logo Design</span><span>Visual Identity</span><span>Brand Guidelines</span><span>Color Systems</span><span>Typography</span><span>Brand Strategy</span></div>
             </div>
           </div>
@@ -851,7 +866,17 @@
               <span class="svc-arrow" id="arrow-svc-social">+</span>
             </div>
             <div class="svc-detail" id="svc-social">
+              <p class="svc-vision">"Posting without a strategy is just noise. We make it signal."</p>
               <p>Consistent, strategic, scroll-stopping content — handled. We take social media off your plate entirely, or work alongside you to level up what you're already doing. Strategy, content creation, scheduling, community management, and growth — all of it.</p>
+              <p>We don't just fill your feed. We build a presence that attracts the right audience, builds trust, and turns followers into clients. Every caption, every reel, every story — created with purpose.</p>
+              <div class="svc-includes">
+                <div class="svc-include-item"><span class="svc-check">→</span>Monthly content strategy & calendar</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Custom graphics, reels & carousels</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Caption writing & hashtag research</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Scheduling & publishing</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Community management & engagement</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Monthly performance reporting</div>
+              </div>
               <div class="svc-tags"><span>Content Strategy</span><span>Feed Design</span><span>Reels & Video</span><span>Community Management</span><span>Scheduling</span><span>Growth Strategy</span></div>
             </div>
           </div>
@@ -862,7 +887,17 @@
               <span class="svc-arrow" id="arrow-svc-web">+</span>
             </div>
             <div class="svc-detail" id="svc-web">
+              <p class="svc-vision">"Your website should work as hard as you do — and look better doing it."</p>
               <p>Your website is your hardest-working team member. We design and build digital experiences that convert — beautiful, fast, and built to grow with you. From landing pages to full e-commerce stores, we handle everything from concept to launch.</p>
+              <p>We blend stunning design with smart UX so visitors don't just land — they stay, explore, and take action. Built on platforms you can actually manage, or fully custom if that's what your brand demands.</p>
+              <div class="svc-includes">
+                <div class="svc-include-item"><span class="svc-check">→</span>Custom design & UX strategy</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Squarespace, Shopify, or custom build</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>E-commerce setup & product pages</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Mobile-first, fast & SEO-ready</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Website copywriting & brand voice</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Launch support & training</div>
+              </div>
               <div class="svc-tags"><span>Website Design</span><span>E-Commerce</span><span>Landing Pages</span><span>Squarespace / Shopify</span><span>UX / UI</span><span>Copywriting</span></div>
             </div>
           </div>
@@ -873,7 +908,17 @@
               <span class="svc-arrow" id="arrow-svc-photo">+</span>
             </div>
             <div class="svc-detail" id="svc-photo">
+              <p class="svc-vision">"Visuals that make people stop, feel something, and remember you."</p>
               <p>Content that actually looks like you — elevated, on-brand, and ready to use everywhere. We handle brand shoots, product photography, lifestyle content, reels, campaigns, and everything in between. Show up visually with content that makes people stop scrolling.</p>
+              <p>We plan every shoot with your brand's story in mind — not just pretty pictures, but a visual library you can pull from across your website, socials, ads, and beyond. Because great content should work everywhere.</p>
+              <div class="svc-includes">
+                <div class="svc-include-item"><span class="svc-check">→</span>Brand & lifestyle photography</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Product & e-commerce photography</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Reels, short-form video & b-roll</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Campaign & editorial shoots</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Professional editing & retouching</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Deliverable-ready asset library</div>
+              </div>
               <div class="svc-tags"><span>Brand Photography</span><span>Product Shoots</span><span>Reels & Video</span><span>Campaign Content</span><span>Editing & Retouching</span><span>UGC-Style Content</span></div>
             </div>
           </div>
@@ -884,7 +929,17 @@
               <span class="svc-arrow" id="arrow-svc-marketing">+</span>
             </div>
             <div class="svc-detail" id="svc-marketing">
+              <p class="svc-vision">"Creativity without strategy is just art. We make it both."</p>
               <p>Smart strategy behind everything we create. We help you figure out where to show up, who to speak to, and how to turn attention into revenue. From campaign planning to paid ads to full go-to-market strategy — we build the roadmap and execute it.</p>
+              <p>We look at the full picture — your audience, your competitors, your goals — and build a marketing engine that's sustainable and scalable. No guessing, no wasted spend. Just intentional growth.</p>
+              <div class="svc-includes">
+                <div class="svc-include-item"><span class="svc-check">→</span>Brand & audience strategy</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Campaign planning & creative direction</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Paid social & Google Ads management</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Email marketing & automation</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Funnel building & conversion strategy</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Analytics, reporting & optimization</div>
+              </div>
               <div class="svc-tags"><span>Campaign Planning</span><span>Paid Ads</span><span>Email Marketing</span><span>Go-to-Market Strategy</span><span>Analytics & Reporting</span><span>Funnel Building</span></div>
             </div>
           </div>
@@ -895,7 +950,17 @@
               <span class="svc-arrow" id="arrow-svc-content">+</span>
             </div>
             <div class="svc-detail" id="svc-content">
+              <p class="svc-vision">"Every brand has a story. We make sure yours is the one people remember."</p>
               <p>Words that sound like you — only sharper. We write copy that connects: website copy, blog posts, newsletters, captions, scripts, and branded content. Whether you need a one-off piece or an ongoing content partner, we make sure your voice comes through on every page.</p>
+              <p>Good content builds trust before a sale ever happens. We develop your brand voice and create a consistent content presence that positions you as the go-to in your space — and keeps your audience coming back.</p>
+              <div class="svc-includes">
+                <div class="svc-include-item"><span class="svc-check">→</span>Brand voice & messaging guide</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Website & landing page copy</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Blog posts & long-form content</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Email newsletters & sequences</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Social media captions & scripts</div>
+                <div class="svc-include-item"><span class="svc-check">→</span>Ongoing content partnership</div>
+              </div>
               <div class="svc-tags"><span>Copywriting</span><span>Blog Posts</span><span>Email Newsletters</span><span>Social Captions</span><span>Brand Messaging</span><span>Scripts</span></div>
             </div>
           </div>
