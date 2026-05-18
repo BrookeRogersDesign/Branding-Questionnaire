@@ -214,7 +214,13 @@
     .hosting-cta:hover { background: rgba(255,255,255,0.08); border-color: #555; }
     .hosting-cta-featured { background: var(--lime); color: var(--black); border-color: var(--lime); }
     .hosting-cta-featured:hover { background: #c5f54d; border-color: #c5f54d; }
-    @media (max-width: 900px) { .hosting-grid { grid-template-columns: 1fr; max-width: 420px; } }
+    .hosting-plan-sub { font-size: 12px; color: var(--muted); margin-bottom: 14px; margin-top: -10px; }
+    .hosting-ideal { font-size: 12.5px; color: var(--muted); line-height: 1.5; margin-bottom: 16px; font-style: italic; }
+    .hosting-info-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 40px; }
+    .hosting-info-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; }
+    .hosting-info-title { font-size: 13px; font-weight: 700; color: var(--lime); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+    .hosting-info-card p { font-size: 13.5px; color: var(--off-white); line-height: 1.65; margin: 0; }
+    @media (max-width: 900px) { .hosting-grid { grid-template-columns: 1fr; max-width: 420px; } .hosting-info-grid { grid-template-columns: 1fr; } }
 
     .svc-row { border-top: 1px solid var(--border); cursor: pointer; transition: background 0.15s; }
     .svc-row:last-child { border-bottom: 1px solid var(--border); }
@@ -1012,23 +1018,30 @@
     <div class="panel-wrap">
       <div class="eyebrow">Managed Hosting & Maintenance</div>
       <h2 class="section-title">Keep your site fast,<br>secure & up to date.</h2>
-      <p class="section-sub">We partner with Flywheel to manage and maintain your website — security, updates, and developer hours so your site always runs at its best.</p>
+      <p class="section-sub">We partner with Flywheel to manage and maintain your website — security, updates, and developer hours so your site always runs at its best. Find the perfect plan to keep your WordPress website secure, fast, and up-to-date.</p>
 
       <div class="hosting-grid">
 
         <!-- Basic -->
         <div class="hosting-card">
           <div class="hosting-tier-label">Basic</div>
-          <div class="hosting-price">$<span class="hosting-price-num">185</span><span class="hosting-price-per">/mo</span></div>
-          <div class="hosting-dev-hours">1 hr / month included</div>
+          <div class="hosting-plan-sub">Essential Hosting & Maintenance</div>
+          <div class="hosting-price">$<span class="hosting-price-num">149</span><span class="hosting-price-per">/mo</span></div>
+          <div class="hosting-ideal">Ideal for brochure-style sites needing secure hosting, routine updates, and basic support.</div>
           <div class="hosting-divider"></div>
           <ul class="hosting-features">
             <li><span class="hf-check">✓</span>Flywheel managed hosting</li>
-            <li><span class="hf-check">✓</span>Daily security monitoring</li>
-            <li><span class="hf-check">✓</span>Plugin & theme updates</li>
-            <li><span class="hf-check">✓</span>Daily backups</li>
-            <li><span class="hf-check">✓</span>SSL certificate</li>
-            <li><span class="hf-check">✓</span>Uptime monitoring</li>
+            <li><span class="hf-check">✓</span>Core WordPress updates (automatic)</li>
+            <li><span class="hf-check">✓</span>Plugin & theme updates (monthly)</li>
+            <li><span class="hf-check">✓</span>Daily automated backups</li>
+            <li><span class="hf-check">✓</span>Basic security monitoring</li>
+            <li><span class="hf-check">✓</span>Basic security hardening</li>
+            <li><span class="hf-check">✓</span>Basic uptime monitoring</li>
+            <li><span class="hf-check">✓</span>Basic mobile optimization</li>
+            <li><span class="hf-check">✓</span>Performance optimization (caching & images)</li>
+            <li><span class="hf-check">✓</span>Monthly performance report</li>
+            <li><span class="hf-check">✓</span>Basic maintenance summary</li>
+            <li><span class="hf-check">✓</span>Basic support</li>
             <li><span class="hf-check">✓</span>1 developer hour / month</li>
             <li class="hf-muted"><span class="hf-check">+</span>$185 / hr additional dev time</li>
           </ul>
@@ -1039,18 +1052,24 @@
         <div class="hosting-card hosting-card-featured">
           <div class="hosting-badge">Most Popular</div>
           <div class="hosting-tier-label">Professional</div>
-          <div class="hosting-price">$<span class="hosting-price-num">325</span><span class="hosting-price-per">/mo</span></div>
-          <div class="hosting-dev-hours">2 hrs / month included</div>
+          <div class="hosting-plan-sub">Enhanced Care & Growth</div>
+          <div class="hosting-price">$<span class="hosting-price-num">249</span><span class="hosting-price-per">/mo</span></div>
+          <div class="hosting-ideal">Ideal for businesses wanting proactive care, faster support, and monthly hands-on edits.</div>
           <div class="hosting-divider"></div>
           <ul class="hosting-features">
             <li><span class="hf-check">✓</span>Flywheel managed hosting</li>
-            <li><span class="hf-check">✓</span>Daily security monitoring</li>
-            <li><span class="hf-check">✓</span>Plugin & theme updates</li>
-            <li><span class="hf-check">✓</span>Daily backups</li>
-            <li><span class="hf-check">✓</span>SSL certificate</li>
+            <li><span class="hf-check">✓</span>Core WordPress updates (automatic)</li>
+            <li><span class="hf-check">✓</span>Plugin & theme updates (weekly)</li>
+            <li><span class="hf-check">✓</span>Daily automated backups</li>
+            <li><span class="hf-check">✓</span>Advanced security monitoring (monthly scans)</li>
+            <li><span class="hf-check">✓</span>Basic security hardening</li>
             <li><span class="hf-check">✓</span>Uptime monitoring</li>
+            <li><span class="hf-check">✓</span>Advanced mobile optimization</li>
+            <li><span class="hf-check">✓</span>Advanced performance optimization</li>
+            <li><span class="hf-check">✓</span>Bi-monthly performance checks</li>
+            <li><span class="hf-check">✓</span>Detailed monthly report (Google Analytics + Search Console)</li>
+            <li><span class="hf-check">✓</span>Priority support</li>
             <li><span class="hf-check">✓</span>2 developer hours / month</li>
-            <li><span class="hf-check">✓</span>Monthly performance report</li>
             <li class="hf-muted"><span class="hf-check">+</span>$185 / hr additional dev time</li>
           </ul>
           <a href="mailto:Abigail@howellnmedia.com?subject=Web Hosting Inquiry — Professional Plan" class="hosting-cta hosting-cta-featured">Get Started →</a>
@@ -1059,19 +1078,26 @@
         <!-- Premium -->
         <div class="hosting-card">
           <div class="hosting-tier-label">Premium</div>
-          <div class="hosting-price">$<span class="hosting-price-num">595</span><span class="hosting-price-per">/mo</span></div>
-          <div class="hosting-dev-hours">4 hrs / month included</div>
+          <div class="hosting-plan-sub">Full-Service + Strategy</div>
+          <div class="hosting-price">$<span class="hosting-price-num">349</span><span class="hosting-price-per">/mo</span></div>
+          <div class="hosting-ideal">Ideal for CRM integrations, custom development, or critical sites needing top performance and strategic guidance.</div>
           <div class="hosting-divider"></div>
           <ul class="hosting-features">
             <li><span class="hf-check">✓</span>Flywheel managed hosting</li>
-            <li><span class="hf-check">✓</span>Daily security monitoring</li>
-            <li><span class="hf-check">✓</span>Plugin & theme updates</li>
-            <li><span class="hf-check">✓</span>Daily backups</li>
-            <li><span class="hf-check">✓</span>SSL certificate</li>
+            <li><span class="hf-check">✓</span>Core WordPress updates (automatic)</li>
+            <li><span class="hf-check">✓</span>Plugin & theme updates (daily)</li>
+            <li><span class="hf-check">✓</span>Multiple daily backups (if needed)</li>
+            <li><span class="hf-check">✓</span>Advanced security monitoring (weekly scans)</li>
+            <li><span class="hf-check">✓</span>Proactive security hardening</li>
             <li><span class="hf-check">✓</span>Uptime monitoring</li>
+            <li><span class="hf-check">✓</span>Proactive mobile & performance audits</li>
+            <li><span class="hf-check">✓</span>Weekly performance checks & audits</li>
+            <li><span class="hf-check">✓</span>Staging environment</li>
+            <li><span class="hf-check">✓</span>Detailed monthly report (Analytics, Search Console, Clarity)</li>
+            <li><span class="hf-check">✓</span>SEO & growth support (monthly recs)</li>
+            <li><span class="hf-check">✓</span>Integrations & custom development</li>
+            <li><span class="hf-check">✓</span>Priority support + dedicated manager</li>
             <li><span class="hf-check">✓</span>4 developer hours / month</li>
-            <li><span class="hf-check">✓</span>Monthly performance report</li>
-            <li><span class="hf-check">✓</span>Priority support</li>
             <li class="hf-muted"><span class="hf-check">+</span>$185 / hr additional dev time</li>
           </ul>
           <a href="mailto:Abigail@howellnmedia.com?subject=Web Hosting Inquiry — Premium Plan" class="hosting-cta">Get Started →</a>
@@ -1079,7 +1105,27 @@
 
       </div>
 
-      <p style="text-align:center;font-size:13px;color:var(--muted);margin-top:32px;">All plans include onboarding support. Additional developer time billed at $185 / hr. <a href="mailto:Abigail@howellnmedia.com" style="color:var(--lime);text-decoration:none;">Questions? Get in touch →</a></p>
+      <!-- Additional Info -->
+      <div class="hosting-info-grid">
+        <div class="hosting-info-card">
+          <div class="hosting-info-title">Your Developer Hours</div>
+          <p>Included developer hours cover tasks like content updates, minor design tweaks, or functionality adjustments. Hours do not roll over month-to-month.</p>
+        </div>
+        <div class="hosting-info-card">
+          <div class="hosting-info-title">Billing for Extra Time</div>
+          <p>Developer hours exceeding the included monthly allowance are billed at $185 per hour and are typically costed out and pre-approved.</p>
+        </div>
+        <div class="hosting-info-card">
+          <div class="hosting-info-title">Setup / Migration Fees</div>
+          <p>These fees may apply depending on the complexity of your website. Each project will be assessed independently, and you will be notified in advance.</p>
+        </div>
+        <div class="hosting-info-card">
+          <div class="hosting-info-title">Optional Add-ons</div>
+          <p>Ask us about annual prepayment discounts, website migration assistance, or custom plan configurations to meet your specific needs.</p>
+        </div>
+      </div>
+
+      <p style="text-align:center;font-size:12px;color:var(--muted);margin-top:8px;">**Based on two updates per year at $600.00 per update (3.25hrs of Developer Time) &nbsp;·&nbsp; <a href="mailto:Abigail@howellnmedia.com" style="color:var(--lime);text-decoration:none;">Questions? Get in touch →</a></p>
 
     </div>
   </div>
